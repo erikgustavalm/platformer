@@ -1,10 +1,12 @@
 import pygame 	
-from player import*
-from levelhandler import*
+from player import *
+from levelhandler import *
+
 
 pygame.init()
 jstick = pygame.joystick.Joystick(0)
 jstick.init()
+
 print jstick.get_name()
 
 SCREEN_DIM = (1240,960)
@@ -13,6 +15,7 @@ screen = pygame.display.set_mode(SCREEN_DIM, pygame.DOUBLEBUF | pygame.HWSURFACE
 
 #Loading all the right things
 george = Player("george.png")
+
 mapController = Levelhandler()
 mapController.menu = True
 

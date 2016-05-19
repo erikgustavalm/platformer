@@ -23,12 +23,12 @@ class Player():
 		if self.move_right:
 			self.xpos += 5
 			self.sprite.animator("run/right")
-			print "right"
+#			print "right"
 
 		if self.move_left:
 			self.xpos -= 5
 			self.sprite.animator("run/left")
-			print "left"	
+#			print "left"	
 			
 		if self.stand_still:
 			self.sprite.animator("stand/still")	

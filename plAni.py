@@ -106,3 +106,4 @@ class Animate(object):
 				if self.cap < self.l_jumpEnd:
 					self.cap = self.l_jumpEnd
 
+		print type
